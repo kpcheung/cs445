@@ -1,14 +1,14 @@
 /***************************************************************
-* file: CS445FinalProject.java
-* author: Kevin Kuhlman
-* class: CS 445 – Computer Graphics
+* file: Basic3D.java
+* author: Karen Cheung, Mark Erickson, Kevin Kuhlman
+* class: CS 445 - Computer Graphics
 *
-* assignment: Final Project
-* date last modified: 5/2/2016
+* assignment: Final Program Checkpoint 2 
+* date last modified: 5/31/2016
 *
-* purpose: The purpose of the program is to generate a scene similar
-* to one within Minecraft
-****************************************************************/
+* purpose: This program displays a chunk of cubes with 6 different block types with randomly generated terrain.
+*
+****************************************************************/ 
 package cs.pkg445.pkgfinal.project;
 
 //3D vector simulation
