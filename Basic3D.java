@@ -115,6 +115,7 @@ public class Basic3D {
     // Method: gameLoop
     // Purpose: This method contains the controls for the camera and calls the render method.
     //          It also helps check for the collision between objects
+    //			It also intiates the music to be played in the OpenGL Window
     public void gameLoop() throws FileNotFoundException{
         float dx = 0.0f;
         float dy = 0.0f;
@@ -125,6 +126,7 @@ public class Basic3D {
         float movementSpeed = .35f;
         Mouse.setGrabbed(true);
         
+        //Music
         WaveData data = WaveData.create(new BufferedInputStream(new FileInputStream("03-calm-3.wav")));
         int buffer = alGenBuffers();
         alBufferData(buffer, data.format, data.data, data.samplerate);
@@ -142,7 +144,7 @@ public class Basic3D {
             camera.pitch(dy * mouseSensitivity);
             if (Keyboard.isKeyDown(Keyboard.KEY_M)) {
             	if(isPlaying == false) {
-						alSourcePlay(source);
+					alSourcePlay(source);
                 	isPlaying = true;
                 }
                 else {
