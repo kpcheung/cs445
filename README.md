@@ -1,1 +1,2 @@
-# cs445
+#Textured plane
+OpenGL texture test
